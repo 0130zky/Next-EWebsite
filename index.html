@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next-E | 西安理工大学 — RoboMaster 机甲大师</title>
+<meta name="description" content="Next-E 战队 — 西安理工大学 RoboMaster 参赛战队。以科技为翼，以创新为矛，征战机甲战场。">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ==================== 导航栏 ==================== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img class="nav-logo-img" src="./assets/20260811-175311.png" alt="Next-E">
+      <span class="nav-logo-sep"></span>
+      <img class="rm-logo rm-logo-dark" src="./assets/rm-logo-dark.png" alt="RoboMaster">
+      <img class="rm-logo rm-logo-white" src="./assets/rm-logo-white.png" alt="RoboMaster">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">战队介绍</a></li>
+      <li><a href="#robots">技术组</a></li>
+      <li><a href="#members">成员</a></li>
+      <li><a href="#sponsors">合作伙伴</a></li>
+      <li><a href="#contact">联系我们</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="切换深浅色模式">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ==================== 主页 ==================== -->
+<section class="hero" id="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto">
+    <source src="./assets/rm-hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <img class="hero-title-logo" src="./assets/20260811-175311-white.png" alt="Next-E 战队徽标">
+      <span class="title-sub">西安理工大学 · RoboMaster 2027</span>
+    </h1>
+    <p class="hero-desc">
+      格物穷理 不破不立<br>
+      
+    </p>
+    <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+      <symbol id="icon-cpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/><path d="M9 9h6v6H9zm-6 1h2m-2 4h2m5-11v2m4-2v2m7 5h-2m2 4h-2m-5 7v-2m-4 2v-2"/></g></symbol>
+      <symbol id="icon-gear" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37c1 .608 2.296.07 2.572-1.065"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/></g></symbol>
+      <symbol id="icon-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0"/><path d="M7 12a5 5 0 1 0 10 0a5 5 0 1 0-10 0"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"/></g></symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 8l-4 4l4 4m10-8l4 4l-4 4M14 4l-4 16"/></symbol>
+      <symbol id="icon-board" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 12h2l2-5l3 10l3-10l3 10l3-10l1.5 5H22"/></symbol>
+    </svg>
+    <div class="hero-groups">
+      <div class="hero-group">
+        <span class="hero-group-icon"><svg class="hero-group-svg"><use href="#icon-cpu"/></svg></span>
+        <span class="hero-group-name">电控组</span>
+      </div>
+      <div class="hero-group">
+        <span class="hero-group-icon"><svg class="hero-group-svg"><use href="#icon-gear"/></svg></span>
+        <span class="hero-group-name">机械组</span>
+      </div>
+      <div class="hero-group">
+        <span class="hero-group-icon"><svg class="hero-group-svg"><use href="#icon-target"/></svg></span>
+        <span class="hero-group-name">算法组</span>
+      </div>
+      <div class="hero-group">
+        <span class="hero-group-icon"><svg class="hero-group-svg"><use href="#icon-code"/></svg></span>
+        <span class="hero-group-name">软件组</span>
+      </div>
+      <div class="hero-group">
+        <span class="hero-group-icon"><svg class="hero-group-svg"><use href="#icon-board"/></svg></span>
+        <span class="hero-group-name">硬件组</span>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#about" class="btn btn-primary">探索战队</a>
+      <a href="#contact" class="btn btn-outline">联系我们</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 战队介绍 ==================== -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">About Us</span>
+      <h2 class="section-title">我们是谁</h2>
+      <p class="section-desc">98%的人在这里被打败，但是100%的人在这里获得成长</p>
+    </div>
+    <div class="about-text">
+      <h3>十年传承，永不止步</h3>
+      <p>Next-E 战队成立于2015年，是西安理工大学工程训练中心的一支充满激情与创造力的机器人竞赛团队。我们专注于由全国大学生机器人大赛 <strong>RoboMaster 机甲大师赛</strong>，致力于机器人技术的研发与创新。</p>
+      <p>战队横跨<em>机械工程与自动化、电气系统控制、计算机科学、视觉算法识别与导航</em>等多个学科领域，由十年来累计千余名名来自不同专业的优秀学子组成。</p>
+      <div class="about-values">
+        <div class="value-item">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/></svg>
+          </div>
+          <span>极速迭代</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <span>精准控制</span>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span>团队协作</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 技术组展示 ==================== -->
+<section class="section robots" id="robots">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Tech Teams</span>
+      <h2 class="section-title">技术组介绍</h2>
+      <p class="section-desc">五大技术方向协同</p>
+    </div>
+        <div class="tech-carousel" id="techCarousel">
+      <button class="carousel-arrow carousel-prev" id="techPrev" aria-label="上一个组别">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <div class="carousel-stage" id="techStage">
+<!-- 电控组 -->
+      <div class="tech-card">
+        <div class="tech-icon">
+          <svg class="tech-icon-svg"><use href="#icon-cpu"/></svg>
+        </div>
+        <div class="tech-info">
+          <span class="tech-tag">Electronic Control</span>
+          <h3 class="tech-name">电控组</h3>
+          <div class="tech-desc">
+            <p>战车的“小脑与神经”，负责把机械结构变成能跑能打的真车，是连接上层算法与底层硬件的桥梁。</p>
+            <p><strong>嵌入式开发</strong>：主控程序编写与调试，涵盖 STM32 驱动、CAN/SPI/UART 通信、传感器解算与整机链路打通。</p>
+            <p><strong>控制算法</strong>：运动控制与状态反馈，负责闭环算法调参、麦轮与全向轮运动学解算、云台姿态解算与自稳。</p>
+            <p><strong>技术栈</strong>：C 语言 · STM32 · Keil + STM32CubeMX · FreeRTOS。</p>
+          </div>
+        </div>
+      </div>
+<!-- 机械组 -->
+      <div class="tech-card">
+        <div class="tech-icon">
+          <svg class="tech-icon-svg"><use href="#icon-gear"/></svg>
+        </div>
+        <div class="tech-info">
+          <span class="tech-tag">Mechanical Design</span>
+          <h3 class="tech-name">机械组</h3>
+          <div class="tech-desc">
+            <p>机器人的骨骼与肌肉，负责整车结构从设计到实物的全流程落地。</p>
+            <p><strong>结构设计</strong>：底盘、云台、弹舱与发射机构设计，覆盖工程仿真与轻量化。</p>
+            <p><strong>加工装配</strong>：零件加工对接、整车装配与迭代调试，让图纸变为能上赛场的真车。</p>
+            <p><strong>技术栈</strong>：SolidWorks · 有限元分析 · 加工工艺 · 3D 打印。</p>
+          </div>
+        </div>
+      </div>
+<!-- 算法组 -->
+      <div class="tech-card">
+        <div class="tech-icon">
+          <svg class="tech-icon-svg"><use href="#icon-target"/></svg>
+        </div>
+        <div class="tech-info">
+          <span class="tech-tag">Algorithm & AI</span>
+          <h3 class="tech-name">算法组</h3>
+          <div class="tech-desc">
+            <p>机器人的大脑，负责视觉感知与决策算法，用模型与数据赋予机器人战场智慧。</p>
+            <p><strong>视觉感知</strong>：自瞄识别、能量机关与目标跟踪算法研究，让机器人“看得见”。</p>
+            <p><strong>决策控制</strong>：弹道解算与预测、路径规划与自主决策，让机器人“想得清、打得准”。</p>
+            <p><strong>技术栈</strong>：Python · C++ · OpenCV · 深度学习 · Linux · ROS。</p>
+          </div>
+        </div>
+      </div>
+<!-- 软件组 -->
+      <div class="tech-card">
+        <div class="tech-icon">
+          <svg class="tech-icon-svg"><use href="#icon-code"/></svg>
+        </div>
+        <div class="tech-info">
+          <span class="tech-tag">Software Engineering</span>
+          <h3 class="tech-name">软件组</h3>
+          <div class="tech-desc">
+            <p>战队的“技术核心”之一，分软件开发与软件宣运两方向，兼顾产品研发与品牌建设。</p>
+            <p><strong>软件开发</strong>：RM 模拟器、自定义比赛客户端、战术分析与可视化工具、战队信息化系统。</p>
+            <p><strong>软件宣运</strong>：官网前后端开发运维、技术内容产出、公众号/B 站运营、赞助商对接。</p>
+            <p><strong>技术栈</strong>：Unity · C# · TS · React · Vue · Node.js · Python；官网：HTML · CSS · JS。</p>
+          </div>
+        </div>
+      </div>
+<!-- 硬件组 -->
+      <div class="tech-card">
+        <div class="tech-icon">
+          <svg class="tech-icon-svg"><use href="#icon-board"/></svg>
+        </div>
+        <div class="tech-info">
+          <span class="tech-tag">Hardware Engineering</span>
+          <h3 class="tech-name">硬件组</h3>
+          <div class="tech-desc">
+            <p>机器人的能量与电路基石，负责从原理图到 PCB 制板的全链路自研。</p>
+            <p><strong>电路设计</strong>：主控板与功率驱动板设计，电源管理、传感器选型与信号链路搭建。</p>
+            <p><strong>板级调试</strong>：PCB 绘制、打样焊接与整机调试，保障每一块板子稳定可靠上赛场。</p>
+            <p><strong>技术栈</strong>：Altium Designer · C 语言 · 电源设计 · 焊接与调试。</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <button class="carousel-arrow carousel-next" id="techNext" aria-label="下一个组别">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 核心成员 ==================== -->
+<section class="section members" id="members">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Team</span>
+      <h2 class="section-title">27赛季核心成员</h2>
+      <p class="section-desc">交叉学科，共同成长</p>
+    </div>
+    <div class="members-grid">
+      <!-- ════════════════ 成员信息修改区（改这里）════════════════
+           每张卡片可改字段：
+             · <h4 class="member-name">  姓名
+             · member-role 徽章         职务 / 组别（可加可删，最多建议 2 个）
+             · member-grade             年级（不写则卡片不显示）
+             · member-desc              一句话介绍（不写则卡片不显示）
+             · member-avatar 内 <img>   头像照片（放 assets/members/ 下）
+           ═════════════════════════════════════════════════════ -->
+      <!-- 成员 1 -->
+      <div class="member-card">
+        <div class="member-avatar"><img src="./assets/members/wjh.jpg" alt="王家辉"></div>
+        <div class="member-info">
+          <h4 class="member-name">王家辉</h4>
+          <div class="member-roles">
+            <span class="member-role">队长</span>
+            <span class="member-role">算法组</span>
+          </div>
+          <p class="member-grade">大三</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar"><img src="./assets/members/czy.jpg" alt="陈昭宇"></div>
+        <div class="member-info">
+          <h4 class="member-name">陈昭宇</h4>
+          <div class="member-roles">
+            <span class="member-role">算法组组长</span>
+          </div>
+          <p class="member-grade">大四</p>
+        </div>
+      </div>
+      <!-- 成员 2 -->
+      <div class="member-card">
+        <div class="member-avatar"><img src="./assets/members/wjl.jpg" alt="吴家磷"></div>
+        <div class="member-info">
+          <h4 class="member-name">吴家磷</h4>
+          <div class="member-roles">
+            <span class="member-role">机械组组长</span>
+          </div>
+          <p class="member-grade">大三</p>
+        </div>
+      </div>
+      <!-- 成员 3 -->
+      <div class="member-card">
+        <div class="member-avatar"><img src="./assets/members/zky.jpg" alt="张凯越"></div>
+        <div class="member-info">
+          <h4 class="member-name">张凯越</h4>
+          <div class="member-roles">
+            <span class="member-role">电控组组长</span>
+            <span class="member-role">软件组组长</span>
+          </div>
+          <p class="member-grade">大二</p>
+        </div>
+      </div>
+      <!-- 成员 4 -->
+      <div class="member-card">
+        <div class="member-avatar"><img src="./assets/members/xhf.jpg" alt="解宏飞"></div>
+        <div class="member-info">
+          <h4 class="member-name">解宏飞</h4>
+          <div class="member-roles">
+            <span class="member-role">硬件组组长</span>
+          </div>
+          <p class="member-grade">大二</p>
+        </div>
+      </div>
+      <!-- 成员 5 -->
+      <div class="member-card">
+        <div class="member-avatar"><img src="./assets/members/jth.jpg" alt="姜天航"></div>
+        <div class="member-info">
+          <h4 class="member-name">姜天航</h4>
+          <div class="member-roles">
+            <span class="member-role">电控组</span>
+          </div>
+          <p class="member-grade">大四</p>
+        </div>
+      </div>
+      <!-- 成员 6 -->
+      <div class="member-card">
+        <div class="member-avatar"><img src="./assets/members/njq.jpg" alt="倪建琪"></div>
+        <div class="member-info">
+          <h4 class="member-name">倪建琪</h4>
+          <div class="member-roles">
+            <span class="member-role">算法组</span>
+          </div>
+          <p class="member-grade">大三</p>
+        </div>
+      </div>
+      
+      <!-- 成员 8 -->
+      <div class="member-card">
+        <div class="member-avatar"><img src="./assets/members/gzw.jpg" alt="顾梓文"></div>
+        <div class="member-info">
+          <h4 class="member-name">顾梓文</h4>
+          <div class="member-roles">
+            <span class="member-role">硬件组</span>
+          </div>
+          <p class="member-grade">大三</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 合作伙伴 ==================== -->
+<section class="section sponsors" id="sponsors">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Partners</span>
+      <h2 class="section-title">合作伙伴</h2>
+      <p class="section-desc">感谢每一位支持我们的伙伴</p>
+    </div>
+    <div class="sponsors-grid">
+      <a class="sponsor-item sponsor-link" href="https://www.yourcee.com/" target="_blank" rel="noopener noreferrer">
+        <div class="sponsor-logo">
+          <img src="./assets/sponsors/youxin.png" alt="优信电子">
+        </div>
+        <span class="sponsor-name">优信电子</span>
+      </a>
+      <a class="sponsor-item sponsor-link" href="https://ipcon.tmall.com/" target="_blank" rel="noopener noreferrer">
+        <div class="sponsor-logo">
+          <img src="./assets/sponsors/aipuchuang.png" alt="艾普创">
+        </div>
+        <span class="sponsor-name">艾普创</span>
+      </a>
+      <a class="sponsor-item sponsor-link" href="https://world.taobao.com/dianpu/112249719.htm" target="_blank" rel="noopener noreferrer">
+        <div class="sponsor-logo sponsor-logo-text">
+          <span>哈长伟碳纤维</span>
+        </div>
+      </a>
+      <a class="sponsor-item sponsor-link" href="https://www.gy2025.com/" target="_blank" rel="noopener noreferrer">
+        <div class="sponsor-logo">
+          <img src="./assets/sponsors/quanzhou.png" alt="铨州智造">
+        </div>
+        <span class="sponsor-name">铨州智造</span>
+      </a>
+      <a class="sponsor-item sponsor-link" href="https://www.huaqiu.com/" target="_blank" rel="noopener noreferrer">
+        <div class="sponsor-logo">
+          <img src="./assets/sponsors/huaqiu.png" alt="华秋">
+        </div>
+        <span class="sponsor-name">华秋</span>
+      </a>
+      <div class="sponsor-item sponsor-join">
+        <div class="sponsor-logo sponsor-join-icon">
+          <span>+</span>
+        </div>
+        <span class="sponsor-name">欢迎加入</span>
+        <span class="sponsor-tier">虚位以待 · 诚邀合作</span>
+      </div>
+    </div>
+    <div class="sponsors-cta">
+      <p>期待与更多伙伴携手同行</p>
+      <a href="#contact" class="btn btn-outline">成为赞助商</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 联系我们 ==================== -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="section-header">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">联系我们</h2>
+          <p class="section-desc">加入我们，一起征战 RoboMaster</p>
+        </div>
+        <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div><h4>地址</h4><p>西安理工大学工程训练中心 305</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div><h4>邮箱</h4><p>kaiyue.link@gmail.com</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div><h4>电话</h4><p>+86 156 6486 0898</p></div>
+        </div>
+        <div class="contact-social">
+          <a href="https://github.com/NEXT-E-control" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://space.bilibili.com/1289802205" target="_blank" rel="noopener" class="social-link" aria-label="B站">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373Z"/></svg>
+          </a>
+          <a href="https://www.douyin.com/user/MS4wLjABAAAAjEdM2od1IqYN_DrYPdi_J0USBAQekgmTF9zp-4alxg6qBNswB3uCfQB7sv-W_6x8?from_tab_name=main&amp;showSubTab=video&amp;showTab=post" target="_blank" rel="noopener" class="social-link" aria-label="抖音">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.58 7.19c-1.44-.15-2.75-.72-3.79-1.65-.98-.9-1.67-2.08-1.98-3.54h-3.58v13.65c0 1.9-1.54 3.44-3.44 3.44S5.35 17.55 5.35 15.65s1.54-3.44 3.44-3.44c.36 0 .7.06 1.02.16V8.66c-3.48-.35-6.24 2.39-6.24 5.86 0 3.3 2.68 5.98 5.98 5.98s5.98-2.68 5.98-5.98V11.1c1.24.79 2.68 1.26 4.22 1.3V8.83c-.4-.02-.8-.03-1.15-.03z"/></svg>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="survey-wrap">
+        <iframe class="survey-iframe" src="https://v.wjx.cn/vm/tOXaHMb.aspx?width=100%&amp;source=iframe"
+          frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"
+          title="Next-E 招新报名问卷"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 页脚 ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">
+          <img class="footer-logo-img" src="./assets/20260811-175311.png" alt="Next-E">
+          
+        </a>
+        <p>格物穷理，不破不立。<br>西安理工大学</p>
+      </div>
+      <div class="footer-links">
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="#about">战队介绍</a></li>
+          <li><a href="#robots">技术组</a></li>
+          <li><a href="#members">成员</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>更多信息</h4>
+        <ul>
+          <li><a href="#sponsors">合作伙伴</a></li>
+          <li><a href="#contact">加入我们</a></li>
+          <li><a href="#">招新公告</a></li>
+        </ul>
+      </div>
+      <div class="footer-gate">
+        <img src="./assets/footer-gate.png" alt="西安理工大学校门">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2027 Next-E 战队. 西安理工大学. 保留所有权利.</p>
+      <p class="footer-dedication">为 RoboMaster 而生，为春茧而战</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
